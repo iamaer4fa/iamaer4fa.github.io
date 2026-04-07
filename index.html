@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan E. Registos | Senior Data Engineer</title>
+    <style>
+        /* Modern Dark Theme CSS */
+        :root {
+            --bg-color: #0f172a; /* Slate 900 */
+            --surface-color: #1e293b; /* Slate 800 */
+            --text-main: #f8fafc; /* Slate 50 */
+            --text-muted: #94a3b8; /* Slate 400 */
+            --accent-color: #38bdf8; /* Light Blue */
+            --accent-hover: #0284c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header / Hero Section */
+        header {
+            padding: 100px 0 60px;
+            border-bottom: 1px solid var(--surface-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .hero-text {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--accent-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-right: 15px;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(56, 189, 248, 0.1);
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--surface-color);
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--text-main);
+        }
+
+        /* Tech Stack Grid */
+        .stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .stack-card {
+            background-color: var(--surface-color);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .stack-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        /* Projects Section */
+        .project-card {
+            background-color: var(--surface-color);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .project-card h4 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .project-role {
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .project-details strong {
+            color: var(--text-main);
+        }
+
+        .project-details p {
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="home">
+        <div class="container">
+            <h1>Allan E. Registos</h1>
+            <h2>Senior Data Engineer & Infrastructure Architect</h2>
+            <p class="hero-text">
+                Bridging the gap between complex industrial data, scalable backend architectures, and high-availability server infrastructure. I specialize in the 'back-of-the-backend,' building robust systems that perform flawlessly under 24/7 operational stress.
+            </p>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="mailto:allan.registos@gmail.com" class="btn btn-outline">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h3>About Me</h3>
+            <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 800px;">
+                With over 24 years of experience in enterprise IT and manufacturing environments, I build and optimize relational databases (PostgreSQL, MS SQL), architect resilient Linux/VMware infrastructures, and engineer data pipelines that connect physical machines to enterprise software. I am passionate about data integrity, vendor accountability, and enforcing strict deployment protocols.
+            </p>
+        </div>
+    </section>
+
+    <section id="tech-stack">
+        <div class="container">
+            <h3>Core Tech Stack</h3>
+            <div class="stack-grid">
+                <div class="stack-card">
+                    <h4>Database & Data Engineering</h4>
+                    <p style="color: var(--text-muted);">PostgreSQL, MS SQL Server, MySQL, NoSQL (Firebase/Firestore), ETL Pipelines, Complex Query Optimization, Key-Value Data Mapping.</p>
+                </div>
+                <div class="stack-card">
+                    <h4>Infrastructure & DevOps</h4>
+                    <p style="color: var(--text-muted);">Linux (CentOS, Ubuntu, RedHat), VMware ESXi & vSphere, Windows Server, Active Directory, BackupPC, Bash Scripting.</p>
+                </div>
+                <div class="stack-card">
+                    <h4>IT Leadership</h4>
+                    <p style="color: var(--text-muted);">Vendor Management, UAT Deployment Protocols, SDLC (Software Development Life Cycle), Systems Integration (IoT/Hardware to ERP).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h3>Featured Case Studies</h3>
+            
+            <div class="project-card">
+                <h4>High-Velocity IoT to ERP Data Integration</h4>
+                <span class="project-role">Lead Systems Integrator / Data Architect</span>
+                <div class="project-details">
+                    <p><strong>Challenge:</strong> An external ERP vendor deployed a rigid, positional-indexing parser that failed to accurately record production data from a KADAR corrugator control machine during high-speed, dynamic manufacturing exceptions.</p>
+                    <p><strong>Solution:</strong> Conducted Root Cause Analysis (RCA) and spearheaded the architectural redesign from a fixed positional sequence to a dynamic, Data-Key Mapping logic. Enforced strict UAT deployment protocols to prevent vendor "testing in production."</p>
+                    <p><strong>Result:</strong> Achieved 100% data integrity between physical factory output and financial ERP ledgers, protecting the company's $6,000+ software investment and eliminating manual data entry for floor operators.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h4>Enterprise Virtualization & Disaster Recovery</h4>
+                <span class="project-role">Infrastructure Architect</span>
+                <div class="project-details">
+                    <p><strong>Challenge:</strong> Ensuring zero-downtime and data safety for a 24/7 large-scale manufacturing facility.</p>
+                    <p><strong>Solution:</strong> Architected a highly available server environment utilizing VMware ESXi and vSphere. Implemented automated, bare-metal, and file-level backups using Linux-based BackupPC with scheduled cron-job automation.</p>
+                    <p><strong>Result:</strong> Maintained 99.9% uptime for mission-critical ERP and Active Directory servers, completely insulating the business from data loss and hardware failures.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h4>AI-Driven IoT Emotion Detection Pipeline</h4>
+                <span class="project-role">Machine Learning & IoT Integrator</span>
+                <div class="project-details">
+                    <p><strong>Challenge:</strong> Processing unstructured analog data (human voice) in real-time to trigger physical hardware responses based on emotional context.</p>
+                    <p><strong>Solution:</strong> Built an end-to-end data pipeline integrating <strong>Node-RED</strong> for microphone audio capture and a <strong>Python</strong> backend for machine learning inference. Trained an audio classification model on a verified dataset to classify emotions (anger, happiness, sadness). The Python script pipes the ML inference through the <strong>Tuya SDK/API</strong> to dynamically change the color of an RGB smart bulb.</p>
+                    <p><strong>Result:</strong> Demonstrated successful edge-level integration of machine learning models with physical IoT infrastructure, showcasing advanced API routing, Python scripting, and automated hardware control. <a href="https://github.com/iamaer4fa/emotiondetection" target="_blank" style="color: var(--accent-color); text-decoration: none;">[View on GitHub]</a></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>Currently open to Senior Data Engineering roles and freelance backend/database sub-contracts.</p>
+            <p style="margin-top: 15px;">
+                <a href="mailto:allan.registos@gmail.com">Email Me</a> | 
+                <a href="https://www.linkedin.com/in/allan-registos-154958169/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
